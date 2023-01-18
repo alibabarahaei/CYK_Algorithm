@@ -1,0 +1,121 @@
+﻿<Window x:Class="CYK_Project.MainWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:CYK_Project"
+            mc:Ignorable="d"
+            Title="MainWindow" Height="500" Width="875" ResizeMode="NoResize" AllowsTransparency="True"
+            WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent"
+            >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Border Background="White" CornerRadius="40" >
+
+
+
+
+        <Grid RenderTransformOrigin="0.5,0.5" Margin="2,0,0,2"   >
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.048"/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid Margin="-4,118,420,90" Height="290" >
+                <Border Background="#03bf69" CornerRadius="30" Margin="81,0,71,0">
+                    <TextBox HorizontalAlignment="Center" FontSize="18" TextWrapping="Wrap"  VerticalAlignment="Center" Width="273" RenderTransformOrigin="0.5,0.5" Height="258" Name="Inputgrammer_TB" 
+                             AcceptsReturn="True" >
+
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-0.215"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                </Border>
+            </Grid>
+
+
+
+            <Button Style="{StaticResource menuButton}" Margin="506,371,171,87" Background="#02be68" Foreground="White" Click="Check_Btn_Click"  >
+                <Grid>
+                    <TextBlock Text="Check" Margin="43 0 0 0" ></TextBlock>
+                </Grid>
+
+            </Button>
+            <Grid   Width="100" Height="50" Margin="66,33,707,415">
+                <Border Margin="36,24,-36,-24">
+                    <StackPanel Margin="0 10 0 30">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
+                            <Ellipse Fill="#ff6258" Width="10" Height="10" ></Ellipse>
+                            <Ellipse Fill="#ffbf2f" Width="10" Height="10" Margin="7 0 7 0" ></Ellipse>
+                            <Ellipse Fill="#2acb42" Width="10" Height="10" ></Ellipse>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+
+
+            <Border Background="#03bf69" CornerRadius="40 0 0 40 " Margin="-3,-1,839,1">
+                <Grid>
+
+                </Grid>
+            </Border>
+            <Border Background="#03bf69" CornerRadius="40 40 0  0 " Height="40" Margin="1,0,-1,458">
+                <Grid>
+
+                </Grid>
+            </Border>
+            <Border Background="#03bf69" CornerRadius="0 40 40 0 " Width="40" Margin="835,3,-2,-3">
+                <Grid>
+
+                </Grid>
+            </Border>
+            <Grid Width="400" Height="35" Margin="404,125,69,338" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="47*"/>
+                    <ColumnDefinition Width="53*"/>
+                </Grid.ColumnDefinitions>
+                <Border Background="#03bf69" CornerRadius="10" Margin="1,-2,-1,2" Grid.ColumnSpan="2" >
+                    <TextBox HorizontalAlignment="Center" FontSize="18" TextWrapping="Wrap"  VerticalAlignment="Center" Width="382" Height="23" Name="inputdata_TB"/>
+
+                </Border>
+            </Grid>
+            <Border Background="#03bf69" CornerRadius="0 0 40 40 " Height="40" Margin="-1,460,1,-2">
+                <Grid>
+
+                </Grid>
+            </Border>
+            <Grid Width="390" Height="180">
+                <Border Background="#03bf69" Margin="164,15,-170,-15" CornerRadius="15">
+                    <Label Name="output_lB" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="164" Width="376" Background="White" Foreground="#FF332E2E" FontFamily="B Nazanin"/>
+
+                </Border>
+            </Grid>
+            <TextBlock HorizontalAlignment="Left" Margin="90,88,0,0" TextWrapping="Wrap" Text="Grammer :" VerticalAlignment="Top" FontSize="19" FontWeight="Bold" FontFamily="Arial Black" Foreground="#FF8F8B8B" />
+            <TextBlock HorizontalAlignment="Left" Margin="414,92,0,0" TextWrapping="Wrap" Text="Input :" VerticalAlignment="Top" FontSize="19" FontWeight="Bold" Foreground="#FF8F8B8B"  FontFamily="Arial Black"/>
+
+        </Grid>
+    </Border>
+
+
+</Window>
