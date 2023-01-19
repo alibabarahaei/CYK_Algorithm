@@ -65,7 +65,9 @@
                 <Border Margin="36,24,-36,-24">
                     <StackPanel Margin="0 10 0 30">
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
-                            <Ellipse Fill="#ff6258" Width="10" Height="10" ></Ellipse>
+                            <Ellipse MouseUp="exit" Fill="#ff6258" Width="10" Height="10"  >
+                             
+                            </Ellipse>
                             <Ellipse Fill="#ffbf2f" Width="10" Height="10" Margin="7 0 7 0" ></Ellipse>
                             <Ellipse Fill="#2acb42" Width="10" Height="10" ></Ellipse>
                         </StackPanel>
@@ -107,7 +109,7 @@
             </Border>
             <Grid Width="390" Height="180">
                 <Border Background="#03bf69" Margin="164,15,-170,-15" CornerRadius="15">
-                    <Label Name="output_lB" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="164" Width="376" Background="White" Foreground="#FF332E2E" FontFamily="B Nazanin"/>
+                    <Label Name="output_lB" FontSize="21" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="164" Width="376" Background="White" Foreground="#FF332E2E" FontFamily="B Nazanin"/>
 
                 </Border>
             </Grid>

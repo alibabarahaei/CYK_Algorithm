@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Media;
 
 namespace CYK_Project
 {
@@ -12,7 +13,7 @@ namespace CYK_Project
         public MainWindow()
         {
             InitializeComponent();
-           
+
 
 
         }
@@ -21,13 +22,17 @@ namespace CYK_Project
         {
 
 
-            if (inputdata_TB.Text == "")
+           
+            if (Inputgrammer_TB.Text == "")
             {
-                output_lB.Content = " ورودی را وارد کنید";
+
+                output_lB.Foreground = Brushes.Red;
+                output_lB.Content = "قوانین گرامر را وارد کنید  ";
             }
-            else if (Inputgrammer_TB.Text == "")
+            else if (inputdata_TB.Text == "")
             {
-                output_lB.Content = " گرامر را وارد کنید";
+                output_lB.Foreground = Brushes.Red;
+                output_lB.Content = " ورودی را وارد کنید";
             }
             else
             {
@@ -40,7 +45,7 @@ namespace CYK_Project
                 inputData = inputData.Replace("\n", "");
                 String[] tempID = inputData.Split('/');
 
-                
+
                 try
                 {
                     for (int i = 0; i <= tempID.Length - 1; i++)
@@ -72,22 +77,28 @@ namespace CYK_Project
 
                 if (!parser.GetResult())
                 {
-
+                    output_lB.Foreground = Brushes.Red;
                     output_lB.Content = $" در این گرامر یافت نشد{word} رشته ";
+
                 }
                 else
                 {
+
+                    output_lB.Foreground = Brushes.Green;
                     output_lB.Content = $" در این گرامر یافت شد{word} رشته ";
                 }
 
 
             }
 
-
-
-
         }
 
 
+        private void exit(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Application.Current.Shutdown();
+
+        }
     }
 }
