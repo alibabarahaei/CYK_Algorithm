@@ -4,7 +4,9 @@ CYK_Algorithm with WPF
 Demo Project
 
 
-https://user-images.githubusercontent.com/74149277/213299385-69dc9905-f4f6-4369-b5d1-55168f181e47.mp4
 
-![Screenshot1](https://user-images.githubusercontent.com/74149277/213299610-fac84039-6ba8-4a4e-8015-cc9a7910313d.jpg)
-![Screenshot2](https://user-images.githubusercontent.com/74149277/213299615-3c42f7b7-8d2f-4c70-a888-9885c8f9cfff.jpg)
+https://user-images.githubusercontent.com/74149277/213547551-cae25e81-b1c1-4a25-b6db-da9d007d3373.mp4
+
+
+![bandicam 2023-01-19 23-35-30-035](https://user-images.githubusercontent.com/74149277/213547817-dc5142f1-9137-401a-8481-e83154d27167.jpg)
+![bandicam 2023-01-19 23-15-09-873](https://user-images.githubusercontent.com/74149277/213547852-74e9a6e0-95e6-469c-a5e4-6b6b6de578e0.jpg)
